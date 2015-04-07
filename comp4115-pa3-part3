@@ -1,0 +1,8 @@
+Part 2
+
+mysql> create procedure hasLastName (in lname varchar(20)) begin select first_name, last_name from employees where last_name := lname as result; end//
+
+mysql> create procedure averageSalary (in dept_no varchar(20)) begin select avg(salaray) from deptments where dept_no := dept_no as result; end//
+
+
+mysql> create procedure sortByGender (in gender ENUM('m','f')) begin select count(*) from employees where gender := gender as result; end//

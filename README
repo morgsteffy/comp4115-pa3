@@ -1,0 +1,24 @@
+//comp4115-pa-README 
+//Morgan Steffy
+
+Part 2
+I could not get the time.cpp file to compile, with the error:
+
+///////////////
+Macintosh-2:Desktop administrator$ gcc -shared -o time.so time.cpp
+time.cpp:8:1: error: unknown type name 'string'; did you mean 'std::string'?
+string time(int seconds)
+^~~~~~
+std::string
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/iosfwd:189:65: note: 
+      'std::string' declared here
+typedef basic_string<char, char_traits<char>, allocator<char> > string;
+                                                                ^
+1 error generated.
+///////////////
+
+(changing "string" to "std::string" causes a really long error about undefined symbols for architecture x86_64)
+
+
+
+
